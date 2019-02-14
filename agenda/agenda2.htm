@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+
+
+
+function MM_showHideLayers() { //v2.0
+  var i, visStr, args, theObj;
+  args = MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) { //with arg triples (objNS,objIE,visStr)
+    visStr   = args[i+2];
+    if (navigator.appName == 'Netscape' && document.layers != null) {
+      theObj = eval(args[i]);
+      if (theObj) theObj.visibility = visStr;
+    } else if (document.all != null) { //IE
+      if (visStr == 'show') visStr = 'visible'; //convert vals
+      if (visStr == 'hide') visStr = 'hidden';
+      theObj = eval(args[i+1]);
+      if (theObj) theObj.style.visibility = visStr;
+  } }
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#000068" background="../img/bg.jpg">
+<div id="fondo" style="position:absolute; left:0px; top:0px; width:535px; height:480px; z-index:1"><img src="../img/bgcentro.jpg" width="536" height="480"></div>
+<div id="Layer1" style="position:absolute; left:8px; top:23px; width:506px; height:445px; z-index:7"><img src="img/calendar.jpg" width="506" height="445"></div>
+<div id="Layer2" style="position:absolute; left:451px; top:358px; width:30px; height:61px; z-index:8"><a href="#" onClick="MM_showHideLayers('document.layers[\'uno\']','document.all[\'uno\']','hide','document.layers[\'due\']','document.all[\'due\']','hide','document.layers[\'tre\']','document.all[\'tre\']','hide','document.layers[\'quattro\']','document.all[\'quattro\']','show')"><img src="img/19.jpg" width="30" height="61" border="0"></a></div>
+<div id="Layer3" style="position:absolute; left:278px; top:358px; width:32px; height:61px; z-index:9"><a href="#" onClick="MM_showHideLayers('document.layers[\'uno\']','document.all[\'uno\']','hide','document.layers[\'due\']','document.all[\'due\']','hide','document.layers[\'tre\']','document.all[\'tre\']','show','document.layers[\'quattro\']','document.all[\'quattro\']','hide')"><img src="img/12.jpg" width="32" height="61" border="0"></a></div>
+<div id="Layer4" style="position:absolute; left:134px; top:358px; width:31px; height:61px; z-index:10"><a href="#" onClick="MM_showHideLayers('document.layers[\'uno\']','document.all[\'uno\']','hide','document.layers[\'due\']','document.all[\'due\']','show','document.layers[\'tre\']','document.all[\'tre\']','hide','document.layers[\'quattro\']','document.all[\'quattro\']','hide')"><img src="img/6.jpg" width="31" height="61" border="0"></a></div>
+<div id="uno" style="position:absolute; left:28px; top:49px; width:355px; height:288px; z-index:11; visibility: visible"><img src="img/11.gif" width="353" height="285"></div>
+<div id="due" style="position:absolute; left:24px; top:52px; width:355px; height:288px; z-index:12; visibility: hidden"><img src="img/61pad.gif" width="467" height="168" border="0" usemap="#cale3"></div>
+<div id="tre" style="position:absolute; left:28px; top:52px; width:355px; height:181px; z-index:13; visibility: hidden"><img src="img/121pad.gif" width="416" height="162" border="0" usemap="#cale2"></div>
+<div id="quattro" style="position:absolute; left:24px; top:52px; width:355px; height:181px; z-index:14; visibility: hidden"><img src="img/191pad.gif" width="379" height="162" border="0" usemap="#cale1"></div>
+<map name="cale1">
+  <area shape="rect" coords="93,38,352,88" href="agenda2.htm">
+</map> <map name="cale2">
+  <area shape="rect" coords="110,38,352,87" href="agenda2.htm">
+</map> <map name="cale3">
+  <area shape="rect" coords="119,33,327,98" href="agenda2.htm">
+</map>
+</body>
+</html>
